@@ -1,0 +1,17 @@
+{
+  "name": "yast",
+  "version": "1.0.0",
+  "description": "yet another satellite tracker",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "nodemon": "^1.10.2",
+    "pug": "^2.0.0-beta6",
+    "sgp4": "^1.0.10"
+  }
+}

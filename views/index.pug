@@ -1,0 +1,24 @@
+include header.pug
+script(type='text/javascript', language='javascript', src='http://maps.googleapis.com/maps/api/js?key=AIzaSyDycJV5js3fBpHg0kmIkqD24KjA78y0kVI&sensor=false&language=en')
+
+    // Page Content
+#mapid
+#floating-panel
+  #satelliteName
+  hr
+  #latitude
+  #longitude
+  #altitude
+  // /.row
+// /.container
+// jQuery Version 1.11.1
+script(src='/js/jquery.js')
+// Bootstrap Core JavaScript
+script(src='/js/bootstrap.min.js')
+script.
+  var currentSat = !{JSON.stringify(currentSat)};
+  var timestamp = !{timestamp};
+  var satPos = !{JSON.stringify(satPos)};
+script(src='/js/daynightoverlay.min.js')
+script(src='/js/map.js')
+
