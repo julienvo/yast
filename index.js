@@ -33,8 +33,8 @@ app.use('/', routes);
 app.use(function(req, res, next) {
   res.status(404).send('<h1>Error 404 - This is not the URL you are looking for</h1>');
 });
-
-var server = app.listen(8080, function(){
+var port = process.env.PORT || 8080;
+var server = app.listen(port, function(){
   var adresseHote = server.address().address;
   var portEcoute = server.address().port;
   console.log('Server online at http://%s%s', adresseHote, portEcoute);
